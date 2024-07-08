@@ -1,0 +1,16 @@
+{
+    "name": "Fan's Tab Sorter",
+    "description": "This is a test web extension, thank you for looking at it.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker":"background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions":["tabs","activeTab","storage"],
+    "content_security_policy":{
+        "extension_pages":"script-src 'self'; object-src 'self'"
+    }
+}
